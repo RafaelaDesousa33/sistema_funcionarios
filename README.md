@@ -3,7 +3,7 @@ Sistema de Funcionários — Python (POO)
 Este projeto foi desenvolvido com o objetivo de praticar Programação Orientada a Objetos (POO) em Python, criando um sistema simples, mas bem estruturado, para gerenciamento de funcionários de uma empresa.
 O foco foi trabalhar herança, encapsulamento e polimorfismo, além de organização de código e boas práticas.
 
-🚀 Objetivo do Projeto
+ Objetivo do Projeto
 
 Criar um sistema que permita cadastrar diferentes tipos de funcionários, exibindo seus dados e calculando salários com bônus específicos para cada categoria.
 
@@ -17,24 +17,24 @@ Vendedor
 
 Cada classe possui características próprias e comportamento individualizado no cálculo de bônus.
 
-🧠 Conceitos de POO aplicados
-✔️ Herança
+ Conceitos de POO aplicados
+ Herança
 
 As classes Gerente e Vendedor herdam da classe base Funcionario, reaproveitando código e permitindo especializações.
 
-✔️ Encapsulamento
+- Encapsulamento
 
 Os atributos são privados (__nome, __cpf, __salario), garantindo segurança e controle no acesso aos dados.
 
-✔️ Polimorfismo
+- Polimorfismo
 
 Cada tipo de funcionário implementa seu próprio método calcular_bonus, permitindo comportamentos diferentes dependendo do cargo.
 
-✔️ Organização Modular
+- Organização Modular
 
 As classes foram separadas em arquivos distintos dentro da pasta models/, deixando o projeto mais limpo e fácil de manter.
 
-📂 Estrutura do Projeto
+ Estrutura do Projeto
 sistema_funcionarios/
 │
 ├── models/
@@ -44,26 +44,26 @@ sistema_funcionarios/
 │
 └── app.py
 
-🔧 Como funciona cada classe
-🧑‍💼 Classe Funcionario
+ Como funciona cada classe
+Classe Funcionario:
 
 Possui nome, CPF e salário.
 
 Serve como base para outras classes.
 
-👨‍💼 Classe Gerente
+ Classe Gerente:
 
 Herda de Funcionario.
 
 Possui método calcular_bonus que soma um valor fixo ao salário.
 
-🧑‍🔧 Classe Vendedor
+ Classe Vendedor:
 
 Herda de Funcionario.
 
 Seu bônus é calculado por percentual de comissão.
 
-▶️ Exemplo de uso
+ Exemplo de uso
 from Funcionario import Funcionario
 from Gerente import Gerente
 from Vendedor import Vendedor
@@ -74,7 +74,7 @@ vendedor1 = Vendedor("Ana", "283726392345", 2000)
 
 print(vendedor1.calcular_bonus(10))  # 10% de comissão
 
-🎯 O que aprendi desenvolvendo este projeto
+- O que aprendi desenvolvendo este projeto
 
 Como estruturar um sistema orientado a objetos de forma clara e escalável.
 
@@ -86,7 +86,7 @@ Boas práticas de modularização e separação de responsabilidades.
 
 Como escrever código mais limpo, reaproveitável e fácil de entender.
 
-🛠️ Tecnologias Utilizadas
+- Tecnologias Utilizadas
 
 Python 3
 
@@ -94,7 +94,7 @@ Paradigma de Programação Orientada a Objetos
 
 VS Code
 
-📌 Próximos Passos
+- Próximos Passos
 
 Quero evoluir o projeto futuramente adicionando:
 
@@ -108,7 +108,7 @@ Relatórios automáticos
 
 Interface gráfica simples
 
-💬 Feedback ou sugestões?
+- Feedback ou sugestões?
 
 Fique à vontade para abrir uma issue ou entrar em contato!
-Estou sempre aberta a aprimorar minhas habilidades e aprender novas ideias do mercado. 😊
+Estou sempre aberta a aprimorar minhas habilidades e aprender novas ideias do mercado. 
